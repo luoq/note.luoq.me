@@ -1,18 +1,26 @@
 # Simple commands
-* Rewrite a commit message
+*   rewrite a commit message
 
- > git commit --amend
+    ~~~ {.bash}
+git commit --amend
+    ~~~
 
 * show the working tree status
 
- > git status
+    ~~~ {.bash}
+git status
+    ~~~
 
 * add tag
 
- > git tag -a v1.0
+    ~~~ {.bash}
+git tag -a v1.0
+    ~~~
 
 * checkout a dir
 
- > git checkout old-kernel -- ./
+    ~~~ {.bash}
+git checkout old-kernel -- ./
+    ~~~
 
- Note the last / 
+    **Note the last /**
