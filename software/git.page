@@ -24,3 +24,31 @@ git checkout old-kernel -- ./
     ~~~
 
     **Note the last /**
+
+# git svn
+
+* Checking out a Subversion repository:
+
+    ~~~ {.bash}
+git svn clone http://lq/svn
+    ~~~
+
+* Before committing back to Subversion, you will want to update to apply any new changes in the repository to your local Git repo.
+
+    ~~~ {.bash}
+git svn rebase
+    ~~~
+
+* Commit back to svn
+
+    ~~~ {.bash}
+git svn dcommit
+    ~~~
+
+* switch to a different svn url
+    1. Edit the svn-remote url URL in .git/config to point to the new domain name
+    1. Run git svn fetch – This needs to fetch at least one new revision from svn!
+    1. Change svn-remote url back to the original url
+    1. Run git svn rebase -l to do a local rebase (with the changes that came in with the last fetch operation)
+    1. Change svn-remote url back to the new url
+    1. Run git svn rebase should now work again! 
