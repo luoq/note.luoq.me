@@ -23,7 +23,7 @@ git tag -a v1.0
 git checkout old-kernel -- ./
     ~~~
 
-    **Note the last /**
+    **Note the last /**^[http://gitready.com/intermediate/2009/03/18/restoring-a-directory-from-history.html]
 
 # git svn
 
