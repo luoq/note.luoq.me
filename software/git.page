@@ -52,3 +52,17 @@ git svn dcommit
     1. Run git svn rebase -l to do a local rebase (with the changes that came in with the last fetch operation)
     1. Change svn-remote url back to the new url
     1. Run git svn rebase should now work again! 
+
+# remote
+* create remote brach and add track upstream (tracking) reference ^[http://stackoverflow.com/questions/1519006/git-how-to-create-remote-branch]
+
+    ~~~ {.bash}
+git push -u <remote-name> <remote-branch-name>
+git push -u <remote-name> <local-branch-name>:<remote-branch-name>
+    ~~~
+
+* delete a remote branch ^[http://yuji.wordpress.com/2010/06/11/git-delete-remote-branch/]
+
+    ~~~ {.bash}
+git push <remote> :<remote_branch>
+    ~~~
