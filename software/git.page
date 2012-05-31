@@ -1,0 +1,18 @@
+# Simple commands
+* Rewrite a commit message
+
+ > git commit --amend
+
+* show the working tree status
+
+ > git status
+
+* add tag
+
+ > git tag -a v1.0
+
+* checkout a dir
+
+ > git checkout old-kernel -- ./
+
+ Note the last / 
