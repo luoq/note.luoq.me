@@ -1,0 +1,3 @@
+~~~ { .haskell }
+let a = 1:a in head a
+~~~
