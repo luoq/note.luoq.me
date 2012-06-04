@@ -1,0 +1,2 @@
+# remove from world list but not remove
+    emerge --deselect package
