@@ -1,0 +1,17 @@
+# Add item to "Create New" Menu
+1. Create ~/.kde4/share/templates if it doesn't exsit.
+2. Add a desktop file in it with URL entry pointing to template file.
+   Example:
+
+    ~~~ 
+[Desktop Entry]
+Comment=New Texmacs Document
+Encoding=UTF-8
+Name=Texmacs Document
+Type=Link
+URL=$HOME/Templates/template.tm
+    ~~~
+
+3. Create template at the path pointed by URL
+
+From [http://forum.kde.org/viewtopic.php?f=66&t=75515]()
