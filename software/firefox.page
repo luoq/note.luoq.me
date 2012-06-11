@@ -1,0 +1,2 @@
+# Better file picker for KDE
+Change ui.allow_platform_file_picker to false in about:config.
