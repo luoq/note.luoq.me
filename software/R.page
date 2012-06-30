@@ -1,0 +1,3 @@
+# Problems 
+## Fix java env after updating java
+Update library path in '/usr/lib64/R/etc/ldpaths' such that packages like rJava can work.
