@@ -1,0 +1,6 @@
+#  set up a penetration testing lab
+
+See http://www.metasploit.com/help/test-lab.jsp .
+vulnerable target machines can be gotten from:
+htpp://sourceforge.net/projects/virtualhacking/
+http://sourceforge.net/projects/metasploitable/files/Metasploitable2/
