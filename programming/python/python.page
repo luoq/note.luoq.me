@@ -12,11 +12,13 @@ next(x for x in seq if predicate(x),default_value)
 ## reload module
 
 In python 2
+
 ```python
 reload(module)
 ```
 
 In python 3
+
 ```python
 import imp
 imp.reload(module)
