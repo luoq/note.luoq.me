@@ -1,0 +1,77 @@
+<h1>programming</h1>
+<h2>python</h2>
+<h3>How filter out false value from list</h3>
+<p>filter(None,x)</p>
+<h3>Accessing the index in for loops</h3>
+<p>for index,element in enumerate(x):</p>
+<h3>find first</h3>
+<p>next(x for x in seq if predicate(x),default<sub>value</sub>)</p>
+<h3>reload a module</h3>
+<p>module=reload(module)</p>
+<h3>nested list comprehension</h3>
+<p>[item for row in matrix for item in row]</p>
+<h3>iterate through dict</h3>
+<p>iteritems,iterkeys,itervalues</p>
+<h3>raise error</h3>
+<p>raise Exception('some description')</p>
+<h3>raise warning</h3>
+<p>warnings.warn(&quot;some message&quot;)</p>
+<h3>argparse</h3>
+<h4>optional positional argument1</h4>
+<p>parser.add<sub>argument</sub>('dir', nargs='?', default=os.getcwd())</p>
+<h3>run shell script</h3>
+<p>import subprocess p=subprocess.Popen(cmd,shell=True) p.wait()#wait it</p>
+<h3>numpy.einsum</h3>
+<h2>numpy</h2>
+<h3>hstack,vstack</h3>
+<h3>vectorize</h3>
+<h2>matlab</h2>
+<h3>get sparse matrix from simple edge list</h3>
+<p>spconvert</p>
+<h3>read from numeric table</h3>
+<p>dlmread</p>
+<h2>R</h2>
+<h3>kronecker product</h3>
+<p>Use 'kronecker'. Example: repmat &lt;- function(a,n,m) {kronecker(matrix(1,n,m),a)}</p>
+<h3>convert a string to apply scan</h3>
+<p>tc &lt;- textConnection(file)</p>
+<h3>timer</h3>
+<p>system.time(expression)</p>
+<p>t0 &lt;- Sys.time() seconds &lt;- as.double( difftime(Sys.time(), t0, u = 'secs'))</p>
+<h3>record current call</h3>
+<p>match.call()</p>
+<h3>go to browser when error</h3>
+<p>options(error=recover)</p>
+<h3>get name of object</h3>
+<p>name &lt;- deparse(substitute(object))</p>
+<h3>Note &quot;drop&quot; parameter of &quot;[.data.frame&quot;</h3>
+<p>x &lt;- data.frame(x=1:10) x[1:5,] x[1:5,,drop=FALSE]</p>
+<h3>encompass results in a new list</h3>
+<p>y&lt;-within(list(),{x=1;y=2;c=x+y})</p>
+<h3>change dimension order</h3>
+<p>new.data &lt;- aperm(old.data, c(2,3,1)</p>
+<h3>eval a string</h3>
+<p>eval(parse(text=&quot;1+1&quot;))</p>
+<h3>direct product of list</h3>
+<p>df &lt;- expand.grid(a=c(1,2,3),b=c(&quot;a&quot;,&quot;b&quot;),c=c(&quot;x&quot;,&quot;y&quot;),stringsAsFactors=FALSE)</p>
+<h3>data.frame to list of list</h3>
+<p>df.to.list.of.list &lt;- function(x) do.call(function(...) mapply(list,...,SIMPLIFY=FALSE),lapply(x,identity))</p>
+<h3>list of list to data.frame</h3>
+<p>list.of.list.to.df &lt;- function(x){ res &lt;- lapply(1:length(x<em>1</em>),function(i) sapply(x,function(x) x<em>i</em>)) names(res) &lt;- names(x<em>1</em>) do.call(function(...) data.frame(...,stringsAsFactors=FALSE),res) }</p>
+<h1>software</h1>
+<h2>mplayer</h2>
+<h3>'X11 error: BadAlloc (insufficient resources for operation)' Error</h3>
+<p>Workaround: not use '-vo xv'</p>
+<h2>vmware-player</h2>
+<h3>Installation on gentoo</h3>
+<p>See <a href="http://wiki.gentoo.org/wiki/VMware_Player">http://wiki.gentoo.org/wiki/VMware_Player</a> . 'emerge --config vmware-player' is needed to use networking.</p>
+<h3>How to generate 'Ctrl-Alt-X'</h3>
+<p>&quot;in order to send a regular Ctrl+Alt keyboard combination to the guest you need to press Ctrl+Alt+Space, then release the spacebar while still holding down the Ctrl+Alt keys, and then pressing the extra key.&quot; from <a href="http://www.electrictoolbox.com/vmware-ctrl-alt-f1/">http://www.electrictoolbox.com/vmware-ctrl-alt-f1/</a></p>
+<h2>ssh</h2>
+<h3>Specify identity file,namely public key file</h3>
+<p>use '-i' switch.</p>
+<h2>R</h2>
+<h3>run 'R CMD javareconf' as root after java update</h3>
+<h1>hacking</h1>
+<h2>How to set up a penetration testing lab</h2>
+<p>See <a href="http://www.metasploit.com/help/test-lab.jsp">http://www.metasploit.com/help/test-lab.jsp</a> . More vulnerable target machines can be gotten from: <a href="http://sourceforge.net/projects/virtualhacking/">http://sourceforge.net/projects/virtualhacking/</a> <a href="http://sourceforge.net/projects/metasploitable/files/Metasploitable2/">http://sourceforge.net/projects/metasploitable/files/Metasploitable2/</a></p>
