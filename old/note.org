@@ -1,0 +1,98 @@
+* programming
+** python
+*** How filter out false value from list
+    filter(None,x)
+*** Accessing the index in for loops
+    for index,element in enumerate(x):
+*** find first
+    next(x for x in seq if predicate(x),default_value)
+*** reload a module
+    module=reload(module)
+*** nested list comprehension
+    [item for row in matrix for item in row]
+*** iterate through dict
+    iteritems,iterkeys,itervalues
+*** raise error
+    raise Exception('some description')
+*** raise warning
+    warnings.warn("some message")
+*** argparse
+**** optional positional argument1
+     parser.add_argument('dir', nargs='?', default=os.getcwd())
+*** run shell script
+    import subprocess
+    p=subprocess.Popen(cmd,shell=True)
+    p.wait()#wait it
+*** numpy.einsum
+** numpy
+*** hstack,vstack
+*** vectorize
+** matlab
+*** get sparse matrix from simple edge list
+    spconvert
+*** read from numeric table
+    dlmread
+** R
+*** kronecker product
+    Use 'kronecker'.
+    Example:
+    repmat <- function(a,n,m) {kronecker(matrix(1,n,m),a)}
+*** convert a string to apply scan
+    tc <- textConnection(file)
+*** timer
+    system.time(expression)
+
+    t0 <- Sys.time()
+    seconds <- as.double( difftime(Sys.time(), t0, u = 'secs'))
+*** record current call
+    match.call()
+*** go to browser when error
+    options(error=recover)
+*** get name of object
+    name <- deparse(substitute(object))
+*** Note "drop" parameter of "[.data.frame"
+    x <- data.frame(x=1:10)
+    x[1:5,]
+    x[1:5,,drop=FALSE]
+*** encompass results in a new list
+    y<-within(list(),{x=1;y=2;c=x+y})
+*** change dimension order
+    new.data <- aperm(old.data, c(2,3,1)
+*** eval a string
+    eval(parse(text="1+1"))
+*** direct product of list 
+    df <- expand.grid(a=c(1,2,3),b=c("a","b"),c=c("x","y"),stringsAsFactors=FALSE)
+*** data.frame to list of list
+    df.to.list.of.list <- function(x) do.call(function(...) mapply(list,...,SIMPLIFY=FALSE),lapply(x,identity))
+*** list of list to data.frame
+    list.of.list.to.df <- function(x){
+    res <- lapply(1:length(x[[1]]),function(i) sapply(x,function(x) x[[i]]))
+    names(res) <- names(x[[1]])
+    do.call(function(...) data.frame(...,stringsAsFactors=FALSE),res)
+    }
+* software
+** mplayer
+*** 'X11 error: BadAlloc (insufficient resources for operation)' Error
+    Workaround: not use '-vo xv'
+** vmware-player
+*** Installation on gentoo
+    See http://wiki.gentoo.org/wiki/VMware_Player .
+    'emerge --config vmware-player' is needed to use networking.
+  
+*** How to generate 'Ctrl-Alt-X'
+    "in order to send a regular Ctrl+Alt keyboard combination to the
+    guest you need to press Ctrl+Alt+Space, then release the spacebar
+    while still holding down the Ctrl+Alt keys, and then pressing the
+    extra key."
+                   from http://www.electrictoolbox.com/vmware-ctrl-alt-f1/
+** ssh
+*** Specify identity file,namely public key file
+    use '-i' switch.
+** R
+*** run 'R CMD javareconf' as root after java update
+* hacking
+** How to set up a penetration testing lab
+   See http://www.metasploit.com/help/test-lab.jsp .
+   More vulnerable target machines can be gotten from:
+   http://sourceforge.net/projects/virtualhacking/
+   http://sourceforge.net/projects/metasploitable/files/Metasploitable2/
