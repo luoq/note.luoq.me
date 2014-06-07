@@ -1,0 +1,5 @@
+# get sparse matrix from simple edge list
+spconvert
+
+# read from numeric table
+dlmread

@@ -1,0 +1,30 @@
+# tricks
+## filter out false value
+```python
+filter(None, x)
+```
+
+## find first element satisfies a condition
+```python
+next(x for x in seq if predicate(x),default_value)
+```
+
+## reload module
+
+In python 2
+```python
+reload(module)
+```
+
+In python 3
+```python
+import imp
+imp.reload(module)
+```
+
+## run shell script
+```python
+import subprocess
+p=subprocess.Popen(cmd,shell=True)
+p.wait()#wait it
+```
