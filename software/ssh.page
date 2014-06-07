@@ -1,0 +1,29 @@
+# two-side authentication with pubkey and google-authenticator[^gentoo-wiki-link]
+
+1. install google-authenticator
+1. run google-authenticator and scan QR code generated
+2. /etc/ssh/sshd_config
+
+ADD
+
+~~~
+ChallengeResponseAuthentication yes
+AuthenticationMethods publickey,keyboard-interactive:pam
+~~~
+3. /etc/pam.d/sshd
+
+ADD
+
+~~~
+auth       sufficient   pam_google_authenticator.so
+~~~
+
+REMOVE
+
+~~~
+auth       include   system-remote-login #only allow pam with google-authenticator
+~~~
+
+4. Ensure times are consistent in server and client (using ntp)
+
+[^gentoo-wiki-link]: http://wiki.gentoo.org/wiki/Google_Authenticator
