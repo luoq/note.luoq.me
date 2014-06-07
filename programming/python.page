@@ -1,0 +1,10 @@
+# tricks
+## filter out false value
+```python
+filter(None, x)
+```
+
+## find first element satisfies a condition
+```python
+next(x for x in seq if predicate(x),default_value)
+```

@@ -1,0 +1,3 @@
+# 'X11 error: BadAlloc (insufficient resources for operation)'
+
+Workaround: not use '-vo xv'
