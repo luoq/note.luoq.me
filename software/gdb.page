@@ -1,0 +1,49 @@
+# Basics
+
+* save command history
+
+```
+set history save
+```
+
+* show stack trace:
+
+```
+bt
+```
+
+* change reference frame:
+
+```
+frame
+```
+
+* move frame
+
+```
+up
+down
+```
+
+* Examining memory
+
+```
+x
+```
+
+* Ignore breakpoint for count[^1]
+
+```
+ bnum count
+```
+
+# Script
+
+See
+]()
+* [http://johnnyjacob.wordpress.com/2009/07/07/gdb-scripting-short-article-for-internal-magazine/]()
+* [http://tromey.com/blog/?p=548]()
+* [http://stackoverflow.com/questions/1094216/what-useful-gdb-scripts-have-you-used-written]()
+* [http://www.mono-project.com/Debugging#Debugging_with_GDB]()
+
+[^1]: http://sourceware.org/gdb/onlinedocs/gdb/Conditions.html#Conditions ]()
