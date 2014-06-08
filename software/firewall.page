@@ -17,6 +17,13 @@ iptables -N NEW_CHAIN
 iptables -vnL --line-number
 ~~~
 
+* save and restore
+
+~~~
+iptables-save > /save/file
+iptables-restore < /restore/file
+~~~
+
 ## notes
 
 * order is important
