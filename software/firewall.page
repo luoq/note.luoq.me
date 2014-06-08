@@ -26,7 +26,7 @@ iptables-restore < /restore/file
 
 * add comment
 
-APPEND `-m comment --comment "your comment"
+APPEND `-m comment --comment "your comment"'
 
 ## notes
 
