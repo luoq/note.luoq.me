@@ -1,0 +1,25 @@
+# join all lines in a file with given delimiter
+
+```
+paste -sd "," file 
+```
+
+# Get self dir in bash script[^1]
+
+```
+    DIR="$(dirname $0)"
+```
+
+# replace all patterns to lower cases
+
+```
+sed 's/\(mU\(Kernel\|\Differential\|Function\|Graphics\|Integration\|Matrix\|NumberTheory\|Polynomial\|Product\|Stream\|Summation\|System\|TeX\)\)/\L\1/g' `find . -type f -name CMakeLists.txt` 
+```
+
+# BIOS infomation
+
+```
+dmidecode
+```
+
+[^1]: [http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in]()
