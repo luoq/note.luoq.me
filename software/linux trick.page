@@ -7,7 +7,7 @@ paste -sd "," file
 # Get self dir in bash script[^1]
 
 ```
-    DIR="$(dirname $0)"
+DIR="$(dirname $0)"
 ```
 
 # replace all patterns to lower cases
