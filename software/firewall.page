@@ -2,3 +2,33 @@
 ## guide
 
 * [Simple stateful firewall @ arch wiki](https://wiki.archlinux.org/index.php/Simple_Stateful_Firewall)
+
+## command
+
+* create chains
+
+~~~
+iptables -N NEW_CHAIN
+~~~
+
+* List tables with line-number
+
+~~~
+iptables -vnL --line-number
+~~~
+
+## notes
+
+* order is important
+
+* allow inboud from established and related connection
+
+~~~
+iptables -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+~~~
+
+* allow connections on loopback interface
+
+~~~
+iptables -A INPUT -i lo -j ACCEPT
+~~~
