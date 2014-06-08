@@ -24,6 +24,10 @@ iptables-save > /save/file
 iptables-restore < /restore/file
 ~~~
 
+* add comment
+
+APPEND `-m comment --comment "your comment"
+
 ## notes
 
 * order is important
