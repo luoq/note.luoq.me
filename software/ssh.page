@@ -26,7 +26,7 @@ auth       include   system-remote-login #only allow pam with google-authenticat
 
 4. Ensure times are consistent in server and client (using ntp)
 
-# Different Authentication on different local address
+# Different Authentication based on local address
 
 
 [^gentoo-wiki-link]: http://wiki.gentoo.org/wiki/Google_Authenticator
@@ -35,7 +35,7 @@ Use Match block in sshd_config
 
 ```
 AuthenticationMethods publickey,keyboard-interactive:pam
-Match LocalAddress 192.168.2.1
+Match LocalAddress 192.168.2.1_ip_in_trusted_network
         AuthenticationMethods publickey
 ```
 
