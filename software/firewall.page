@@ -43,3 +43,18 @@ iptables -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 ~~~
 iptables -A INPUT -i lo -j ACCEPT
 ~~~
+
+* reset iptables
+
+~~~
+iptables -P INPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -F
+iptables -X
+iptables -t nat -F
+iptables -t nat -X
+iptables -t mangle -F
+iptables -t mangle -X
+~~~
+**NOTE:** set policy to ACCEPT before flush when run interactive
