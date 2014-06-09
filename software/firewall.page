@@ -58,3 +58,11 @@ iptables -t mangle -F
 iptables -t mangle -X
 ~~~
 **NOTE:** set policy to ACCEPT before flush when run interactive
+
+Or use system provided script
+
+* debian:
+
+~~~
+/etc/init.d/iptables-persistent flush
+~~~
