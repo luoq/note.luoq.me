@@ -66,3 +66,13 @@ git push -u <remote-name> <local-branch-name>:<remote-branch-name>
     ~~~ {.bash}
 git push <remote> :<remote_branch>
     ~~~
+
+* force push
+
+push when your want to change history of remote repo, maybe after 'git reabase' or 'git commit --amend' locally.
+
+```bash
+git push -f origin
+```
+
+** DON'T ** do it on public repo.
