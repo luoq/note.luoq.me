@@ -30,3 +30,10 @@ import subprocess
 p=subprocess.Popen(cmd,shell=True)
 p.wait()#wait it
 ```
+
+## load **simple** python object from str
+
+* eval : complementary of repr
+* ast.literal_eval : safer than eval
+* pickle.loads
+* json.loads : no tuple concept
