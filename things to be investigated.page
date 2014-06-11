@@ -1,7 +1,40 @@
+# python
+
+## ipython
+
+* kernel for other language: haskell julia R ...
+
+## visualizaiton
+
+* plotly
+
+## computation
+
+* numexpr
+* numba
+* theano
+
+## other
+
+* ruffus
+* gproftodot.py
+
+# C/C++
+
 * gcc: cloog graphite
-* competition platform :  hackerrank  crowdanalytix  TunedIT innocentive
-* tool: gprof2dot.py  tablesgenerator.com numexpr
-* quantopian.com bayeshive.com
-* lush
-* torch7: setup is buggy
+
+# deep learning
+
+* torch7 (setup is buggy)
+
+# tools
+
+* tablesgenerator.com
 * stypi: collaborative  editor
+
+# Other
+
+* competition platform :  hackerrank  crowdanalytix  TunedIT innocentive
+* quantopian.com bayeshive.com
+* [lush](http://lush.sourceforge.net/)
+
