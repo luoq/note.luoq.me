@@ -6,6 +6,7 @@
 
 python package:
 
-* [NoAho](https://github.com/JDonner/NoAho)
+* [acora](https://github.com/scoder/acora)
+* [noaho](https://github.com/JDonner/NoAho) **non overlapping**
 * [esmre](https://code.google.com/p/esmre/) **c module not work with python3**
 * [ahocorasick](https://hkn.eecs.berkeley.edu/~dyoo/python/ahocorasick/) **not work with python3**
