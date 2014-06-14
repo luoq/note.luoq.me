@@ -12,3 +12,12 @@ List direct dependencies:
 Includeing also indirect dependencies:
 
     equery d -D pygtk
+
+## find all installed toplevel package in overlay
+
+Use [eix](http://wiki.gentoo.org/wiki/Eix).
+
+```
+eix --installed-from-overlay OVERLAY --world
+```
+
