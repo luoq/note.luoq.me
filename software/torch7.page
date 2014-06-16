@@ -6,6 +6,21 @@ The install of torch7 on gentoo is quite buggy in gentoo.
 
 * install media-gfx/graphicsmagick with use flag png for gfx.js
 * install luajit luarocks
+* add rocks_servers for torch7
+
+cat /etc/luarocks/config.lua
+
+```
+rocks_trees = {
+   home..[[/.luarocks]],
+   [[/usr/lib64/lua/luarocks]]
+}
+rocks_servers =  {   
+    "http://luarocks.org/repositories/rocks",
+    "https://raw.githubusercontent.com/torch/rocks/master/"
+}
+```
+
 * run luarocks as root or some bag things will happen( I forgot exactly what)
 * install lua packages listed in [https://raw.githubusercontent.com/torch/ezinstall/master/install-luajit+torch]()
 * 'th' script in 'trepl' is not correctly installed( maybe luarocks in gentoo is outdated), fix it manually
