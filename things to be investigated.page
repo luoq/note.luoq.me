@@ -26,6 +26,8 @@
 # deep learning
 
 * torch7 (setup is buggy)
+* [deeplearning4j](http://deeplearning4j.org/)
+* [pylearn2](https://github.com/lisa-lab/pylearn2)
 
 # tools
 
