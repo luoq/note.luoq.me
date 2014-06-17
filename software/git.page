@@ -53,7 +53,23 @@ git svn dcommit
     1. Change svn-remote url back to the new url
     1. Run git svn rebase should now work again! 
 
-# remote
+# remote 
+
+ref: [http://gitready.com/beginner/2009/03/09/remote-tracking-branches.html]()
+
+* list remote branches
+
+```bash
+git branch -r
+git branch -a # both local and remote
+```
+
+* create local branch and track remote
+
+```bash
+git branch --track feature1 origin/master
+```
+
 * create remote brach and add track upstream (tracking) reference ^[http://stackoverflow.com/questions/1519006/git-how-to-create-remote-branch]
 
     ~~~ {.bash}
@@ -75,4 +91,4 @@ push when your want to change history of remote repo, maybe after 'git reabase' 
 git push -f origin
 ```
 
-** DON'T ** do it on public repo.
+**DON'T** do it on public repo.
