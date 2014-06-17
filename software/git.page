@@ -70,6 +70,12 @@ git branch -a # both local and remote
 git branch --track feature1 origin/master
 ```
 
+* push tag ^[[http://git-scm.com/book/en/Git-Basics-Tagging#Sharing-Tags]()]
+
+```bash
+git push origin --tags
+```
+
 * create remote brach and add track upstream (tracking) reference ^[http://stackoverflow.com/questions/1519006/git-how-to-create-remote-branch]
 
     ~~~ {.bash}
