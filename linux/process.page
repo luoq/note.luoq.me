@@ -1,0 +1,31 @@
+# kill
+
+## kill all child process
+
+ref: [http://stackoverflow.com/questions/392022/best-way-to-kill-all-child-processes]()
+
+
+### view pstree
+```bash
+pstree -p
+```
+
+### use kill
+
+* get group number
+```bash
+ps x -o  "%p %r %y %x %c "
+```
+
+* kill group
+```bash
+kill -TERM -GPID
+kill -- -GPID # use -- to not use -GPID as switch
+```
+
+### use pkill
+```bash
+pkill -P PARENT_PID
+```
+
+**Not work for grandchildren**
