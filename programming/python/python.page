@@ -37,3 +37,15 @@ p.wait()#wait it
 * ast.literal_eval : safer than eval
 * pickle.loads
 * json.loads : no tuple concept
+
+
+## add custom logging level
+
+```python
+BIGINFO=25
+logging.addLevelName(BIGINFO, 'BIGINFO')
+def big_info(self, message, *args, **kws):
+    if self.isEnabledFor(BIGINFO):
+        self._log(BIGINFO, message, args, **kws)
+logging.Logger.big_info = big_info
+```
