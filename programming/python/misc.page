@@ -1,15 +1,14 @@
-# tricks
-## filter out false value
+# filter out false value
 ```python
 filter(None, x)
 ```
 
-## find first element satisfies a condition
+# find first element satisfies a condition
 ```python
 next(x for x in seq if predicate(x),default_value)
 ```
 
-## reload module
+# reload module
 
 In python 2
 
@@ -24,14 +23,14 @@ import imp
 imp.reload(module)
 ```
 
-## run shell script
+# run shell script
 ```python
 import subprocess
 p=subprocess.Popen(cmd,shell=True)
 p.wait()#wait it
 ```
 
-## load **simple** python object from str
+# load **simple** python object from str
 
 * eval : complementary of repr
 * ast.literal_eval : safer than eval
@@ -39,7 +38,7 @@ p.wait()#wait it
 * json.loads : no tuple concept
 
 
-## add custom logging level
+# add custom logging level
 
 ```python
 BIGINFO=25
@@ -50,7 +49,7 @@ def big_info(self, message, *args, **kws):
 logging.Logger.big_info = big_info
 ```
 
-## get variables and attributes
+# get variables and attributes
 
 * globals
 * locals
