@@ -49,3 +49,13 @@ def big_info(self, message, *args, **kws):
         self._log(BIGINFO, message, args, **kws)
 logging.Logger.big_info = big_info
 ```
+
+## get variables and attributes
+
+* globals
+* locals
+* vars
+* dir
+* `__dict__` : an attribute
+* `__dir__` 
+* dir
