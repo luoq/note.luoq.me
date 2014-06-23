@@ -1,0 +1,5 @@
+# timer
+
+* time.perf_counter: deprecate time.clock since python3.3
+
+* time.process_time
