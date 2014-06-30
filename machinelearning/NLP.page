@@ -1,0 +1,6 @@
+# language model
+
+## tool
+
+* [kenlm](http://kheafield.com/code/kenlm/): with python wrapper for arpa format model
+* [opengrm-ngram](http://www.openfst.org/twiki/bin/view/GRM/NGramLibrary)
