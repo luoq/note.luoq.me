@@ -5,3 +5,4 @@
 * [kenlm](http://kheafield.com/code/kenlm/): with python wrapper for arpa format model
 * [opengrm-ngram](http://www.openfst.org/twiki/bin/view/GRM/NGramLibrary)
 * [ARPA](http://www.speech.sri.com/projects/srilm/manpages/ngram-format.5.html) format
+* [SRILM](http://www.speech.sri.com/projects/srilm/)
