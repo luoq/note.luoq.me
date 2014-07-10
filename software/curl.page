@@ -20,3 +20,7 @@ curl -w 'We downloaded %{size_download} bytes\n' www.download.com
 curl -w '\n' www.download.com
 curl www.download.com; echo
 ```
+
+## remove internal header
+
+give no content as  in `-H "Host:"'
