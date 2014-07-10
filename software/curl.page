@@ -1,0 +1,22 @@
+# options
+
+* -s: silent
+* -v: verbose, including request and response header
+* -o: output file
+
+# tricks
+
+## only get response header
+
+```bash
+curl -s -D - www.acooke.org -o /dev/null
+```
+
+## add newline in output 
+^[1]: [http://stackoverflow.com/questions/12849584/automatically-add-newline-at-end-of-curl-command]()
+
+```bash
+curl -w 'We downloaded %{size_download} bytes\n' www.download.com
+curl -w '\n' www.download.com
+curl www.download.com; echo
+```
