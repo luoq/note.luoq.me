@@ -1,3 +1,17 @@
 # as np.vstack
 
 use pd.concat. You may want to set ignore_index=True in most case
+
+# missing value
+
+## isnull and notnull
+
+```python
+df.isnull().any(axis=1)
+```
+
+## handling
+
+* dropna
+* fillna: value, method='pad', method='ffill'
+* interpolate
