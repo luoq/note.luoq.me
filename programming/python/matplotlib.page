@@ -1,0 +1,25 @@
+# rc params
+
+```python
+import matplotlib
+matplotlib.rcParams['font.family'] = 'WenQuanYi Zen Hei'
+matplotlib.rcParams['figure.figsize'] = 20, 10
+```
+
+# support chinese font file
+
+We need to hack source code to use ttc font file.
+The source file in MATPLOTLIB_PACKAGE_ROOT/font_manager.py
+change
+
+```
+'ttf': ('ttf', 'otf')
+```
+
+to
+
+```
+'ttf': ('ttf', 'ttc', 'otf')
+```
+
+Then clean the cache in ~/.cache/matplotlib, and reload package
