@@ -15,3 +15,7 @@ df.isnull().any(axis=1)
 * dropna
 * fillna: value, method='pad', method='ffill'
 * interpolate
+
+# time series
+
+* pd.rolling_xxx
