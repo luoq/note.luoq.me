@@ -58,3 +58,14 @@ logging.Logger.big_info = big_info
 * `__dict__` : an attribute
 * `__dir__` 
 * dir
+
+# close gracefully using with and contexlib
+
+```python
+from contextlib import closing
+import urllib
+
+with closing(urllib.urlopen('http://www.python.org')) as page:
+    for line in page:
+        print line
+```
