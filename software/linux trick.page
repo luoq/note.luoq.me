@@ -4,7 +4,8 @@
 paste -sd "," file 
 ```
 
-# Get self dir in bash script[^1]
+# Get self dir in bash script
+from [ref1](http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in)
 
 ```
 DIR="$(dirname $0)"
@@ -22,4 +23,9 @@ sed 's/\(mU\(Kernel\|\Differential\|Function\|Graphics\|Integration\|Matrix\|Num
 dmidecode
 ```
 
-[^1]: [http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in]()
+# fast dir rsync over ssh
+from [ref2](http://www.commandlinefu.com/commands/view/11690/the-fastest-remote-directory-rsync-over-ssh-archival-i-can-muster-40mbs-over-1gb-nics)
+
+```bash
+rsync -aHAXxv --numeric-ids --delete --progress -e "ssh -T -c arcfour -o Compression=no -x" user@<source>:<source_dir> <dest_dir>
+```
