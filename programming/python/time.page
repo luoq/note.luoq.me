@@ -3,3 +3,25 @@
 * time.perf_counter: deprecate time.clock since python3.3
 
 * time.process_time
+
+# time conversion
+
+## dateutil.parser
+```python
+import dateutil.parser
+dateutil.parser.parse('20120104').date()
+dateutil.parser.parse('2012-01-04 12:31:55')
+dateutil.parser.parse('2012-01-04 12:31:')
+```
+
+## strptime and strftime
+
+p for parse, f for format
+
+strftime available in time, datetime.datetime, datetime.date
+strptime available in time, datetime.datetime
+
+```python
+time.strptime('20120101','%Y%m%d')
+datetime.datetime.strptime('20120101','%Y%m%d')
+```
