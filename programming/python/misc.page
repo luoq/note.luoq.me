@@ -58,6 +58,8 @@ logging.Logger.big_info = big_info
 * `__dict__` : an attribute
 * `__dir__` 
 * dir
+* hasattr : use with callable to check method
+* getattr
 
 # close gracefully using with and contexlib
 
