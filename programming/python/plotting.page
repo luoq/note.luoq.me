@@ -1,0 +1,11 @@
+# static plotting
+
+* [matplotlib](http://matplotlib.com)
+
+# dynamic plotting
+
+[A blog post about this topic](http://jakevdp.github.io/blog/2013/12/19/a-d3-viewer-for-matplotlib/)
+
+* [plotly](http://plot.ly)
+* [bokeh](http://bokeh.pydata.org)
+* [mpld3](http://mpld3.github.io/)
