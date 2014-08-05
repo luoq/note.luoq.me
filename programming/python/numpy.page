@@ -1,1 +1,5 @@
 ## einsum
+quite ubiquitous
+
+## np.empty
+preallocate without intialization
