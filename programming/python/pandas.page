@@ -27,3 +27,15 @@ df.isnull().any(axis=1)
 Use multiindex and pd.DataFrame.to_panel to convert to panel;
 Use pd.Panel.transpose to permute dimension;
 Use pd.Panel.to_frame to convert back to dataframe.
+
+# multiindex
+
+## levels at subsections
+
+It seems levels are kept the same when subselected. This causes problems in to_panel which use index levels as key.
+
+Use following snippet to remove unobserved levels [ref](https://github.com/pydata/pandas/issues/2655#issuecomment-29551264).
+
+```python
+new_index = pd.MultiIndex.from_tuples(old_index.tolist())
+```
