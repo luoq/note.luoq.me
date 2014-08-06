@@ -19,3 +19,11 @@ df.isnull().any(axis=1)
 # time series
 
 * pd.rolling_xxx
+
+# panel
+
+## reshape data
+
+Use multiindex and pd.DataFrame.to_panel to convert to panel;
+Use pd.Panel.transpose to permute dimension;
+Use pd.Panel.to_frame to convert back to dataframe.
