@@ -3,3 +3,7 @@ quite ubiquitous
 
 ## np.empty
 preallocate without intialization
+
+## np.transpose
+
+Use axes parameter to permute dimensions
