@@ -2,6 +2,8 @@
 ## static plotting
 
 * [matplotlib](http://matplotlib.com)
+* [ggplot](https://github.com/yhat/ggplot)
+* some modules in pandas, statsmodels
 
 ## dynamic plotting
 
@@ -10,6 +12,11 @@
 * [plotly](http://plot.ly)
 * [bokeh](http://bokeh.pydata.org)
 * [mpld3](http://mpld3.github.io/)
+
+# how to plot
+
+* scatter matrix: pd.tools.plotting.scatter_matrix
+* correlation matrix: statsmodels.graphics.correlation.plot_corr
 
 # matplotlib
 
