@@ -9,7 +9,7 @@ matplotlib.rcParams['figure.figsize'] = 20, 10
 # support chinese font file
 
 We need to hack source code to use ttc font file.
-The source file in MATPLOTLIB_PACKAGE_ROOT/font_manager.py
+The source file is MATPLOTLIB_PACKAGE_ROOT/font_manager.py;
 change
 
 ```
