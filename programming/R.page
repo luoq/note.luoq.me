@@ -30,6 +30,11 @@ match.call()
 options(error=recover)
 ```
 
+# treat warning as error
+```R
+options(warn=2)
+```
+
 # get name of object
 ```R
 name <- deparse(substitute(object))
