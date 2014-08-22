@@ -80,3 +80,12 @@ names(res) <- names(x[[1]])
 do.call(function(...) data.frame(...,stringsAsFactors=FALSE),res)
 }
 ```
+
+# setup for foreach
+```R
+library(doParallel)
+cl<-makeCluster(8)
+registerDoParallel(cl)
+```
+
+then foreach should work.
