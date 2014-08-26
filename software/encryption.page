@@ -1,0 +1,20 @@
+# TrueCrypt
+
+## How to build it in windows
+
+[https://stackoverflow.com/questions/13379644/how-do-i-build-truecrypt-on-windows]()
+
+## audition
+
+[http://istruecryptauditedyet.com/]()
+
+[Phase I report](https://opencryptoaudit.org/reports/)
+
+## archive
+[source applied in order](https://github.com/FreeApophis/TrueCrypt)
+[archives](https://github.com/DrWhax/truecrypt-archive.git)
+
+## continued develop
+
+[TCnext](https://truecrypt.ch/)
+[VeraCrypt](https://veracrypt.codeplex.com/): TrueCrypt based, incompatible
