@@ -1,3 +1,7 @@
+Some links
+
+[http://www.linuxprogrammingblog.com/dd-as-a-swiss-army-knife]()
+
 ## create large file without actually writing data
 ```bash
 dd of=./image bs=4M count=0 seek=1024
