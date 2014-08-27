@@ -1,0 +1,18 @@
+# Install OS
+
+## use disk image
+use dd and disk image; adjust partition size use rasp-config
+
+## use [NOOB](https://github.com/raspberrypi/noobs)
+
+* multi systems on one card
+* headless install via vnc(undocumented)
+[https://github.com/raspberrypi/noobs/issues/116]() [https://github.com/raspberrypi/noobs#how-to-force-recovery-mode-being-entered-on-boot-overrides-gpio-or-keyboard-input]()
+* more controls by edit config files
+* custom os
+
+## [BerryBoot](http://www.berryterminal.com/doku.php/berryboot)
+
+* multi systems on one card
+* headless install via vnc
+* custom os
