@@ -1,0 +1,30 @@
+# package management
+
+## pinning
+[https://wiki.debian.org/AptPreferences#Pinning]()
+
+cat /etc/apt/preferences
+
+```
+Package: *
+Pin: release a=wheezy
+Pin-Priority: 900
+
+Package: *
+Pin: release a=testing
+Pin-Priority: -10`
+
+```
+
+```bash
+apt-get install -t testing ssh
+```
+
+# packages
+
+* ssh: meta-package for ssh stuffs
+* ntpdate: run ntpdate-debian
+
+# config
+
+* [network](https://wiki.debian.org/NetworkConfiguration)
