@@ -7,3 +7,16 @@ Workaround: not use '-vo xv'
 ```
 mplayer -dvd-device /path/to/dvd/folder dvd://
 ```
+
+# 3d
+
+using stereo3d filter
+
+```bash
+mplayer2 -vf stereo3d,scale 1.mkv
+mplayer2 -vf stereo3d=sbs2l,scale 1.mkv #Half-width side-by-side 
+```
+
+[http://www.mplayer2.org/docs/mplayer/]()
+
+[http://lists.mplayerhq.hu/pipermail/mplayer-docs/2011-July/010952.html]()
