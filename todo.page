@@ -27,6 +27,7 @@
 # machine learning
 
 * torch7 (setup is buggy)
+* [Caffe](http://caffe.berkeleyvision.org/)
 * [deeplearning4j](http://deeplearning4j.org/)
 * [pylearn2](https://github.com/lisa-lab/pylearn2)
 * [AI on the web](http://aima.cs.berkeley.edu/ai.html)
