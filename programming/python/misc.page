@@ -76,3 +76,7 @@ with closing(urllib.urlopen('http://www.python.org')) as page:
     for line in page:
         print line
 ```
+
+# operator
+
+* itemgetter: After f = itemgetter(2), the call f(r) returns r[2].
