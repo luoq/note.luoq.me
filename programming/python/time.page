@@ -19,6 +19,7 @@ dateutil.parser.parse('2012-01-04 12:31:')
 p for parse, f for format
 
 strftime available in time, datetime.datetime, datetime.date
+
 strptime available in time, datetime.datetime
 
 ```python
