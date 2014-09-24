@@ -34,7 +34,6 @@ $$ D \left( M_k \left( X \right) \right. = \frac{1}{k} \mu_2 + \frac{k -
 
 From $\left( \sum_i x_i \right)^2 = \sum_i x_i^2 + 2 \sum_{i < j} x_i x_j$,
 $\beta = \frac{n \mu_1^2 - \mu_2}{n - 1}$.
-
 It's well known $\mu_2-\mu_1^2=\sigma^2=\frac{n-1}{n}s^2$
 of $X$. We can simplify
 $$D \left( M_k \left( X \right) \right.=(\frac{1}{k}-\frac{1}{n})s^2$$
