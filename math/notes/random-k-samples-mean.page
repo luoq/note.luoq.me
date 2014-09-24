@@ -1,0 +1,35 @@
+# Problem
+Given $n$ numbers $X$, random choose $k$ numbers from $X$, denote the average as $M_k(X)$.
+
+Discuss the distribution of $M_k(X)$.
+
+# property
+
+$$ M_k \left( X \right) = \sum_{S \subset \left\{ 1, 2, \cdots, n \right\},
+   \left| S \right| = k} \frac{\sum_{i \in S} x_i}{k} I \left( S \right) $$
+where $I(S)$ is the indicator for choosing sample $S$.
+
+## mean and variance
+
+It's easy to see $\frac{C_{n - 1}^{k - 1}}{C_n^k} = \frac{k}{n}, \frac{C_{n - 2}^{k -
+2}}{C_n^k} = \frac{k}{n}  \frac{k - 1}{n - 1}$. So
+
+$$ E \left( M_k \left( X \right) \right) = \frac{1}{C_n^k} \sum_{S \subset
+   \left\{ 1, 2, \cdots, n \right\}, \left| S \right| = k} \frac{1}{k} \sum_{i
+   \in S} x_i = \frac{C_{n - 1}^{k - 1}}{kC_n^k} \sum_i x_i = \frac{\sum_i
+   x_i}{n} $$
+$$ E \left( M_k^2 \left( X \right) \right) = \frac{1}{C_n^k} \sum_{S \subset
+   \left\{ 1, 2, \cdots, n \right\}, \left| S \right| = k} \left( \frac{1}{k}
+   \sum_{i \in S} x_i \right)^2 = \frac{1}{k^2 C_n^k} \left( C_{n - 1}^{k - 1}
+   \sum_i x_i^2 + 2 C_{n - 2}^{k - 2} \sum_{i < j} x_i x_j \right) =
+   \frac{1}{k} \frac{\sum_i x_i^2}{n} + \frac{\left( k - 1 \right)}{k}
+   \frac{\sum_{i < j} x_i x_j}{n \left( n - 1 \right) / 2} $$
+Let $\alpha_1 = \frac{\sum_i x_i}{n}, \alpha_2 = \frac{\sum_i x_i^2}{n}, \beta
+= \frac{\sum_{i < j} x_i x_j}{n \left( n - 1 \right) / 2}$. 
+From $\left( \sum_i x_i \right)^2 = \sum_i x_i^2 + 2 \sum_{i < j} x_i x_j$,
+$\beta = \frac{n \alpha_1^2 - \alpha_2}{n - 1}$
+$$ D \left( M_k \left( X \right) \right. = \frac{1}{k} \alpha_2 + \frac{k -
+   1}{k} \beta - \alpha^2_1 = \left( \beta - \alpha^2_1 \right) + \frac{1}{k}
+   \left( \alpha_2 - \beta \right) $$
+
+$M_k(X)$ have the same mean, and variance decay with $k$ and $D(M_n(X))=0$.
