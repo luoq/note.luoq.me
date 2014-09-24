@@ -24,12 +24,19 @@ $$ E \left( M_k^2 \left( X \right) \right) = \frac{1}{C_n^k} \sum_{S \subset
    \sum_i x_i^2 + 2 C_{n - 2}^{k - 2} \sum_{i < j} x_i x_j \right) =
    \frac{1}{k} \frac{\sum_i x_i^2}{n} + \frac{\left( k - 1 \right)}{k}
    \frac{\sum_{i < j} x_i x_j}{n \left( n - 1 \right) / 2} $$
+
 Let $\mu_1 = \frac{\sum_i x_i}{n}, \mu_2 = \frac{\sum_i x_i^2}{n}, \beta
 = \frac{\sum_{i < j} x_i x_j}{n \left( n - 1 \right) / 2}$. 
-From $\left( \sum_i x_i \right)^2 = \sum_i x_i^2 + 2 \sum_{i < j} x_i x_j$,
-$\beta = \frac{n \mu_1^2 - \mu_2}{n - 1}$
+
 $$ D \left( M_k \left( X \right) \right. = \frac{1}{k} \mu_2 + \frac{k -
    1}{k} \beta - \mu^2_1 = \left( \beta - \mu^2_1 \right) + \frac{1}{k}
    \left( \mu_2 - \beta \right) $$
+
+From $\left( \sum_i x_i \right)^2 = \sum_i x_i^2 + 2 \sum_{i < j} x_i x_j$,
+$\beta = \frac{n \mu_1^2 - \mu_2}{n - 1}$.
+
+It's well known $\mu_2-\mu_1^2=\sigma^2=\frac{n-1}{n}s^2$
+of $X$. We can simplify
+$$D \left( M_k \left( X \right) \right.=(\frac{1}{k}-\frac{1}{n})s^2$$
 
 $M_k(X)$ have the same mean, and variance decay with $k$ and $D(M_n(X))=0$.
