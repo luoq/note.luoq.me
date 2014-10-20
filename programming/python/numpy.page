@@ -7,3 +7,12 @@ preallocate without intialization
 ## np.transpose
 
 Use axes parameter to permute dimensions
+
+## np.isunique on np.naa
+
+
+```python
+# np.__version__ == '1.9.0'
+np.unique(np.array(["a","b",np.nan,np.nan])) # => array(['a', 'b', 'nan'], dtype='|S3')
+np.unique(np.array([1.0,2.0,np.nan,np.nan])) # => array([  1.,   2.,  nan,  nan])
+```
