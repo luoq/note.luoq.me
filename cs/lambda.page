@@ -1,0 +1,42 @@
+# natural number
+~~~ { .scheme}
+#lang racket
+(require rackunit)
+; ((N f) x) = (f^n x)
+(define zero (λ (s) (λ (z) z)))
+(define succ (λ (n) (λ (s) (λ (z) (s ((n s) z))))))
+(define add (λ (a) (λ (b)
+                     (λ (s) ((a s) ((b s)))))))
+(define mul (λ (a) (λ (b)
+                     (λ (s) (a (b s))))))
+(define power (λ (a) (λ (b) (b a))))
+
+(define one (succ zero))
+(define two (succ one))
+(define three (succ two))
+(define four (succ three))
+(define five (succ four))
+
+(define (show n) ((n add1) 0))
+
+(check-equal? (show five)
+              5)
+(check-equal? (show ((mul zero) five))
+              0)
+(check-equal? (show ((mul two) two))
+              4)
+(check-equal? (show ((mul three) three))
+              9)
+(check-equal? (show ((mul three) five))
+              15)
+(check-equal? (show ((power two) five))
+              32)
+(check-equal? (show ((power five) two))
+              25)
+(check-equal? (show ((power five) zero))
+              1)
+(check-equal? (show ((power zero) five))
+              0)
+(check-equal? (show ((power zero) zero))
+              1);notice this
+~~~
