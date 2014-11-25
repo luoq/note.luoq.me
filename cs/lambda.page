@@ -1,5 +1,6 @@
 # natural number
-~~~ { .scheme}
+
+~~~{ .scheme .numberLines}
 #lang racket
 (require rackunit)
 ; ((N f) x) = (f^n x)
