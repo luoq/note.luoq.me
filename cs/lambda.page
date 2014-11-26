@@ -4,13 +4,15 @@
 #lang racket
 (require rackunit)
 ; ((N f) x) = (f^n x)
-(define zero (λ (s) (λ (z) z)))
-(define succ (λ (n) (λ (s) (λ (z) (s ((n s) z))))))
-(define add (λ (a) (λ (b)
-                     (λ (s) ((a s) ((b s)))))))
-(define mul (λ (a) (λ (b)
-                     (λ (s) (a (b s))))))
-(define power (λ (a) (λ (b) (b a))))
+(define zero (λ(s) (λ(z) z)))
+(define succ (λ(n) (λ(s) (λ(z) (s ((n s) z))))))
+(define pred (λ(n) (λ(f) (λ(x)
+                             (((n (λ(g) (λ(h) (h (g f))))) (λ(u) x)) (λ(u) u))))))
+(define add (λ(a) (λ(b)
+                     (λ(s) ((a s) ((b s)))))))
+(define mul (λ(a) (λ(b)
+                     (λ(s) (a (b s))))))
+(define power (λ(a) (λ(b) (b a))))
 
 (define one (succ zero))
 (define two (succ one))
@@ -22,6 +24,10 @@
 
 (check-equal? (show five)
               5)
+(check-equal? (show (pred zero))
+              0);notice this
+(check-equal? (show (pred five))
+              4)
 (check-equal? (show ((mul zero) five))
               0)
 (check-equal? (show ((mul two) two))
