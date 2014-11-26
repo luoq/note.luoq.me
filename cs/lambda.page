@@ -1,4 +1,7 @@
-# natural number
+# church encode
+More info in [wikipedia](https://en.wikipedia.org/wiki/Church_encoding)
+
+## natural number
 
 ~~~{ .scheme .numberLines}
 #lang racket
@@ -8,11 +11,18 @@
 (define succ (λ(n) (λ(s) (λ(z) (s ((n s) z))))))
 (define pred (λ(n) (λ(f) (λ(x)
                              (((n (λ(g) (λ(h) (h (g f))))) (λ(u) x)) (λ(u) u))))))
+(define value (λ(x) (λ(f) (f x))))
+(define extract (λ(v) (v (λ(u) u))))
+(check-equal? (extract (value 'x)) 'x)
+;; If F:= (λ(g) (λ(h) (h (g f))), we have (F (value x)) == (value (f x)) and (F (λ(u) x)) = (value x)
+;; so ((n F) (λ(u) x)) = (value (((pred n) f) x))
+;; (((pred n) f) x)= (extract ((n F) (λ(u) x)) = (((n F) (λ(u) x) (λ(u) u))
 (define add (λ(a) (λ(b)
                      (λ(s) ((a s) ((b s)))))))
 (define mul (λ(a) (λ(b)
                      (λ(s) (a (b s))))))
 (define power (λ(a) (λ(b) (b a))))
+
 
 (define one (succ zero))
 (define two (succ one))
@@ -28,6 +38,7 @@
               0);notice this
 (check-equal? (show (pred five))
               4)
+(check-equal? ((four sin) 1) (((pred five) sin) 1))
 (check-equal? (show ((mul zero) five))
               0)
 (check-equal? (show ((mul two) two))
