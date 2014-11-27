@@ -1,23 +1,26 @@
-# Problem
 Given $n$ numbers $X$, random choose $k$ numbers from $X$, denote the average as $M_k(X)$.
 
-Discuss the distribution of $M_k(X)$.
+Let $\mu = \frac{\sum_i x_i}{n}, s^2 = \frac{\sum_i \left( x_i - \mu \right)^2}{n
+- 1}$, we have
+$$ E \left( M_k \left( X \right) \right) = \mu, D \left( M_k \left( X \right)
+   \right) = \left( \frac{1}{k} - \frac{1}{n} \right) s^2 $$
 
-# property
+$M_k(X)$ have the same mean, and variance decay with $k$ and $D(M_n(X))=0$.
+
+# proof
 
 $$ M_k \left( X \right) = \sum_{S \subset \left\{ 1, 2, \cdots, n \right\},
    \left| S \right| = k} \frac{\sum_{i \in S} x_i}{k} I \left( S \right) $$
 where $I(S)$ is the indicator for choosing sample $S$.
 
-## mean and variance
-
 It's easy to see $\frac{C_{n - 1}^{k - 1}}{C_n^k} = \frac{k}{n}, \frac{C_{n - 2}^{k -
-2}}{C_n^k} = \frac{k}{n}  \frac{k - 1}{n - 1}$. So
+2}}{C_n^k} = \frac{k}{n}  \frac{k - 1}{n - 1}$.
 
 $$ E \left( M_k \left( X \right) \right) = \frac{1}{C_n^k} \sum_{S \subset
    \left\{ 1, 2, \cdots, n \right\}, \left| S \right| = k} \frac{1}{k} \sum_{i
    \in S} x_i = \frac{C_{n - 1}^{k - 1}}{kC_n^k} \sum_i x_i = \frac{\sum_i
-   x_i}{n} $$
+   x_i}{n} = \mu$$
+
 $$ E \left( M_k^2 \left( X \right) \right) = \frac{1}{C_n^k} \sum_{S \subset
    \left\{ 1, 2, \cdots, n \right\}, \left| S \right| = k} \left( \frac{1}{k}
    \sum_{i \in S} x_i \right)^2 = \frac{1}{k^2 C_n^k} \left( C_{n - 1}^{k - 1}
@@ -25,17 +28,15 @@ $$ E \left( M_k^2 \left( X \right) \right) = \frac{1}{C_n^k} \sum_{S \subset
    \frac{1}{k} \frac{\sum_i x_i^2}{n} + \frac{\left( k - 1 \right)}{k}
    \frac{\sum_{i < j} x_i x_j}{n \left( n - 1 \right) / 2} $$
 
-Let $\mu_1 = \frac{\sum_i x_i}{n}, \mu_2 = \frac{\sum_i x_i^2}{n}, \beta
+Let $\mu_2 = \frac{\sum_i x_i^2}{n}, \beta
 = \frac{\sum_{i < j} x_i x_j}{n \left( n - 1 \right) / 2}$. 
 
 $$ D \left( M_k \left( X \right) \right. = \frac{1}{k} \mu_2 + \frac{k -
-   1}{k} \beta - \mu^2_1 = \left( \beta - \mu^2_1 \right) + \frac{1}{k}
+   1}{k} \beta - \mu^2 = \left( \beta - \mu^2 \right) + \frac{1}{k}
    \left( \mu_2 - \beta \right) $$
 
 From $\left( \sum_i x_i \right)^2 = \sum_i x_i^2 + 2 \sum_{i < j} x_i x_j$,
-$\beta = \frac{n \mu_1^2 - \mu_2}{n - 1}$.
-It's well known $\mu_2-\mu_1^2=\sigma^2=\frac{n-1}{n}s^2$
+$\beta = \frac{n \mu^2 - \mu_2}{n - 1}$.
+It's well known $\mu_2-\mu^2=\sigma^2=\frac{n-1}{n}s^2$
 of $X$. We can simplify
 $$D \left( M_k \left( X \right) \right.=(\frac{1}{k}-\frac{1}{n})s^2$$
-
-$M_k(X)$ have the same mean, and variance decay with $k$ and $D(M_n(X))=0$.
