@@ -1,12 +1,11 @@
-# 1
+# note1
 
-\begin{theorem}
   If $f \left( x, y \right) + f \left( y, z \right) = g \left( x, z \right)$
   for $\forall x, y, z$, then $\exists h, s.t.f \left( x, y \right) = h \left(
   x \right) - h \left( y \right) + C$ where $C$ is a constant
-\end{theorem}
 
-\begin{proof}
+**Proof**:
+
   We have $f \left( x, x \right) + f \left( x, x \right) = g \left( x, x
   \right) \Longrightarrow f \left( x, x \right) = \frac{g \left( x, x
   \right)}{2}$
@@ -23,4 +22,3 @@
   \left( x, 0 \right) + g \left( 0, 0 \right) - f \left( y, 0 \right) - f
   \left( x, x \right) = f \left( x, 0 \right) - f \left( y, 0 \right) + C$.
   Let $h \left( x \right) = f \left( x, 0 \right)$ the proof is completed.1
-\end{proof}
