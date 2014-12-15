@@ -21,4 +21,4 @@
   \left( x, 0 \right) + f \left( 0, y \right) - f \left( x, x \right) = f
   \left( x, 0 \right) + g \left( 0, 0 \right) - f \left( y, 0 \right) - f
   \left( x, x \right) = f \left( x, 0 \right) - f \left( y, 0 \right) + C$.
-  Let $h \left( x \right) = f \left( x, 0 \right)$ the proof is completed.1
+  Let $h \left( x \right) = f \left( x, 0 \right)$ the proof is complete
