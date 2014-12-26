@@ -6,6 +6,7 @@ lookup [unicode table](http://unicode-table.com/)
 
 ```python
 chr(0x12fc) # 'ዼ'
+hex(ord('ዼ')) # '0x12fc'
 '\u12fc' # the same
 unicodedata.name('ዼ') # 'ETHIOPIC SYLLABLE DDEE'
 '\N{ETHIOPIC SYLLABLE DDEE}'
