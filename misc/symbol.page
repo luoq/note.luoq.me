@@ -1,0 +1,14 @@
+# unicode
+
+lookup [unicode table](http://unicode-table.com/)
+
+## in python3
+
+```python
+chr(0x12fc) # 'ዼ'
+'\u12fc' # the same
+unicodedata.name('ዼ') # 'ETHIOPIC SYLLABLE DDEE'
+'\N{ETHIOPIC SYLLABLE DDEE}'
+'ዼ'.encode('utf8') # b'\xe1\x8b\xbc'
+b'\xe1\x8b\xbc'.decode('utf8') # 'ዼ'
+```
