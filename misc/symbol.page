@@ -12,4 +12,6 @@ unicodedata.name('ዼ') # 'ETHIOPIC SYLLABLE DDEE'
 '\N{ETHIOPIC SYLLABLE DDEE}'
 'ዼ'.encode('utf8') # b'\xe1\x8b\xbc'
 b'\xe1\x8b\xbc'.decode('utf8') # 'ዼ'
+
+'\U0001f410' == '\N{Goat}'
 ```
