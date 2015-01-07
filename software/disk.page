@@ -8,3 +8,10 @@ Some links
 ```bash
 dd of=./image bs=4M count=0 seek=1024
 ```
+
+# kpartx
+
+create device maps from disk image
+```
+kpartx -av disk_image.raw 
+```
