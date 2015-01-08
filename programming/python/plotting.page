@@ -20,6 +20,10 @@
 
 # matplotlib
 
+## aspect ratio
+
+axes.set_aspect()
+
 ## rc params
 
 ```python
