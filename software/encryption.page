@@ -20,3 +20,10 @@
 
 [TCnext](https://truecrypt.ch/)
 [VeraCrypt](https://veracrypt.codeplex.com/): TrueCrypt based, incompatible
+
+## open using cryptsetup
+
+In case trucecrypt is not installed(e.g do disk related work in a live cd), use cryptsetup to open
+```
+cryptsetup open --type tcrypt device name
+```
