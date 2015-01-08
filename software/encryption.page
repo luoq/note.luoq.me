@@ -23,7 +23,8 @@
 
 ## open using cryptsetup
 
-In case trucecrypt is not installed(e.g do disk related work in a live cd), use cryptsetup to open
+In case trucecrypt is not installed(e.g do disk related work in a live cd), use cryptsetup to open encrypted disk
+
 ```
 cryptsetup open --type tcrypt device name
 ```
