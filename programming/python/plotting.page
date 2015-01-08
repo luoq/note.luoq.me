@@ -46,6 +46,8 @@ to
 
 Then clean the cache in ~/.cache/matplotlib, and reload package
 
+[**This only allow access to first font in ttc, and not work for pdf**](https://github.com/matplotlib/matplotlib/pull/3912)
+
 ## rotate and align date ticks so they look better
 
 matplotlib.figure.Figure.autofmt_xdate
