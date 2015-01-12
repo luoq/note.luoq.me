@@ -1,0 +1,7 @@
+If you start at origin and walk along (1,0) (positive x axis) with distance 1, then turn left $\alpha$ and walk distance 1, and then turn left $\alpha$ and walk  distance 1, etc, what will your trajectory be like?
+
+With geometry intuition(think about walk along a circle with $\alpha$ arc each time), we can show the trajectory is on a circle. If $\alpha/\pi$ is rational, we will get a closed shape; otherwise the set of points we traveled will be dense in the circle.
+
+This can be shown in $\mathbb{C}$ easily.
+Let $a=e^{i \alpha} \not= 0$, we have $\sum_{k=0}^n a^k = \frac{a^{n+1}-1}{a-1}$, or $$ z + s_k = z a^{n+1} $$ where $z=\frac{1}{a-1}, s_k = \sum_{k=0}^n a^k$, so $$ \| z+s_k \| = \|z\| $$
+$s_k$ is at a circle with center $-z$ and radius $\|z\|$
