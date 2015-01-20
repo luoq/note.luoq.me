@@ -1,4 +1,4 @@
-<TeXmacs|1.0.7.14>
+<TeXmacs|1.99.2>
 
 <style|beamer>
 
@@ -258,14 +258,34 @@
   <math|<big|sum><rsub|i,j><around*|[|a<rsub|i>b<rsub|j>-<frac|<around*|(|a<rsub|i>+b<rsub|i>|)>*a<rsub|j>b<rsub|j>|a<rsub|j>+b<rsub|j>>|]>=<big|sum><rsub|i,j><around*|[|a<rsub|j>b<rsub|i>-<frac|<around*|(|a<rsub|j>+b<rsub|j>|)>*a<rsub|i>b<rsub|i>|a<rsub|i>+b<rsub|i>>|]>=<frac|1|2><big|sum><rsub|i,j><around*|[|<around*|(|a<rsub|i>b<rsub|j>+a<rsub|j>b<rsub|i>|)>-<frac|<around*|(|a<rsub|i>+b<rsub|i>|)><rsup|2>*a<rsub|j>b<rsub|j>+<around*|(|a<rsub|j>+b<rsub|j>|)><rsup|2>*a<rsub|i>b<rsub|i>|<around*|(|a<rsub|i>+b<rsub|i>|)><around*|(|a<rsub|j>+b<rsub|j>|)>>|]>=<frac|1|2><big|sum><rsub|i,j><frac|<around*|(|a<rsub|i>*b<rsub|j>-b<rsub|i>*a<rsub|j>|)><rsup|2>|<around*|(|b<rsub|i>+a<rsub|i>|)>*<around*|(|b<rsub|j>+a<rsub|j>|)>>><math|>
 
   so <math|<around*|(|<big|sum><rsub|i>a<rsub|i>|)>*<around*|(|<big|sum><rsub|i>b<rsub|i>|)>-<around*|(|<big|sum><rsub|i>a<rsub|i>+b<rsub|i>|)>*<around*|(|<big|sum><rsub|i><frac|a<rsub|i>*b<rsub|i>|a<rsub|i>+b<rsub|i>>|)>=<frac|1|2><big|sum><rsub|i,j><frac|<around*|(|a<rsub|i>*b<rsub|j>-b<rsub|i>*a<rsub|j>|)><rsup|2>|<around*|(|b<rsub|i>+a<rsub|i>|)>*<around*|(|b<rsub|j>+a<rsub|j>|)>>\<geqslant\>0>
+
+  <paragraph|4>
+
+  <math|<around*|\<langle\>|u,x|\<rangle\>><around*|\<langle\>|v,x|\<rangle\>>\<leqslant\><frac|1|2><around*|[|<around*|\<langle\>|u,v|\<rangle\>>+<sqrt|<around*|\<langle\>|u,u|\<rangle\>><around*|\<langle\>|v,v|\<rangle\>>>|]><around*|\<langle\>|x,x|\<rangle\>>>
+  sharper than <math|><math|<around*|\<langle\>|u,x|\<rangle\>><around*|\<langle\>|v,x|\<rangle\>>\<leqslant\><sqrt|<around*|\<langle\>|u,u|\<rangle\>><around*|\<langle\>|v,v|\<rangle\>>>*<around*|\<langle\>|x,x|\<rangle\>>>
+
+  <math|P<rsub|x><around*|(|u|)>=<frac|<around*|\<langle\>|u,x|\<rangle\>>x|<around*|\<langle\>|x,x|\<rangle\>>>,R<rsub|x><around*|(|u|)>=2*P<rsub|x><around*|(|u|)>-u>.
+  we have <math|<around*|\<\|\|\>|R<rsub|x><around*|(|u|)>|\<\|\|\>>=<around*|\<\|\|\>|u|\<\|\|\>>>
+  <math|>
+
+  From <math|<around*|\<langle\>|R<rsub|x><around*|(|u|)>,v|\<rangle\>>\<leqslant\><around*|\<\|\|\>|R<rsub|x><around*|(|u|)>|\<\|\|\>>*\|<around*|\||v|\|>=<around*|\<\|\|\>|u|\<\|\|\>>*\|<around*|\||v|\|>>
+  and <math|><math|<around*|\<langle\>|R<rsub|x><around*|(|u|)>,v|\<rangle\>>=<around*|\<langle\>|2<frac|<around*|\<langle\>|u,x|\<rangle\>>x|<around*|\<langle\>|x,x|\<rangle\>>>-u,v|\<rangle\>>=2<frac|<around*|\<langle\>|u,x|\<rangle\>><around*|\<langle\>|v,x|\<rangle\>>|<around*|\<langle\>|x,x|\<rangle\>>>-<around*|\<langle\>|u,v|\<rangle\>>>
+  we have the result.
+
+  <paragraph|4.1>
+
+  (a) Apply on three points <math|<around*|(|x,y|)>,<around*|(|y,z|)>,<around*|(|z,x|)>>,
+  right side is obvious, left side is <math|<sqrt|<around*|(|x+y+z|)><rsup|2>+<around*|(|y+z+x|)><rsup|2>>=<sqrt|2><around*|(|x+y+z|)>>
+
+  (b) <math|<around*|(|x,x|)>,<around*|(|y-x,z,x|)>>
+
+  (c) <math|<around*|(|x,y,z|)>,<around*|(|x<rsup|-1>,y<rsup|-1>,z<rsup|-1>|)>>
+  gives <math|<sqrt|<around*|(|x+x<rsup|-1>|)><rsup|2>+*<around*|(|y+y<rsup|-1>|)><rsup|2>+<around*|(|z+z<rsup|-1>|)><rsup|2>>\<leqslant\>>right
+  side. With <math|x+x<rsup|-1>\<geqslant\>2> we complete the proof.
 </body>
 
-<\initial>
-  <\collection>
-    <associate|page-screen-height|1152000tmpt>
-    <associate|page-screen-width|1812480tmpt>
-  </collection>
-</initial>
+<initial|<\collection>
+</collection>>
 
 <\references>
   <\collection>
@@ -290,7 +310,9 @@
     <associate|auto-26|<tuple|26|?>>
     <associate|auto-27|<tuple|27|?>>
     <associate|auto-28|<tuple|28|?>>
+    <associate|auto-29|<tuple|29|?>>
     <associate|auto-3|<tuple|3|?>>
+    <associate|auto-30|<tuple|30|?>>
     <associate|auto-4|<tuple|4|?>>
     <associate|auto-5|<tuple|5|?>>
     <associate|auto-6|<tuple|6|?>>
@@ -303,86 +325,89 @@
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <with|par-left|<quote|6fn>|1.4(a) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|1.4(a) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|1.4(b) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|1.4(b) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|1.5 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|1.5 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|1.6 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|1.6 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-4><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|1.7 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|1.7 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|1.8 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|1.8 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-6><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|1.9 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|1.9 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|1.10 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|1.10 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-8><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|1.14 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|1.14 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-9><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|1.15 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|1.15 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-10><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|2.3 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|2.3 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-11><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|2.4 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|2.4 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-12><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|2.7 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|2.7 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-13><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|2.8 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|2.8 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-14><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|2.9 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|2.9 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-15><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|2.10 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|2.10 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-16><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|2.11 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|2.11 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-17><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|2.12 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|2.12 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-18><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|2.13 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|2.13 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-19><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|2.14 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|2.14 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-20><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|3.1 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|3.1 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-21><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|3.2 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|3.2 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-22><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|3.3 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|3.3 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-23><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|3.4 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|3.4 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-24><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|3.5 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|3.5 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-25><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|3.6 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|3.6 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-26><vspace|0.15fn>>
 
-      <with|par-left|<quote|6fn>|3.7 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|4tab>|3.7 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-27><vspace|0.15fn>>
+
+      <with|par-left|<quote|4tab>|3.8 <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-28><vspace|0.15fn>>
     </associate>
   </collection>
 </auxiliary>
