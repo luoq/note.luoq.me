@@ -9,3 +9,19 @@ app.wsgi_app = ProfilerMiddleware(app.wsgi_app, restrictions=[30])
 app.run(debug = True)
 ```
 from [The Flask Mega-Tutorial, Part XVI: Debugging, Testing and Profiling](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvi-debugging-testing-and-profiling)
+
+# shutdown
+
+```python
+def shutdown_server():
+    func = request.environ.get('werkzeug.server.shutdown')
+    if func is None:
+        raise RuntimeError('Not running with the Werkzeug Server')
+    func()
+@app.route('/shutdown', methods=['POST'])
+def shutdown():
+    shutdown_server()
+    return 'Server shutting down...'
+```
+
+from [Shutdown The Simple Server](http://flask.pocoo.org/snippets/67/)
