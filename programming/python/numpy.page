@@ -16,3 +16,33 @@ Use axes parameter to permute dimensions
 np.unique(np.array(["a","b",np.nan,np.nan])) # => array(['a', 'b', 'nan'], dtype='|S3')
 np.unique(np.array([1.0,2.0,np.nan,np.nan])) # => array([  1.,   2.,  nan,  nan])
 ```
+
+## use numpy types in python arithmetic operations
+
+```python
+from datetime import datetime
+import numpy as np
+
+START_TIME = datetime.now()
+
+# one of the following lines is uncommented before execution
+s = 1.0 # 0
+# s = np.float64(1) #1
+
+# one of the following lines is uncommented before execution
+a = 8.0; b = 2399232.0; #0
+# a = np.float64(8); b = np.float64(2399232); #1
+
+for i in range(100000000):
+    s = (s + a) * s % b
+
+print(s)
+print('Runtime:', datetime.now() - START_TIME)
+```
+
+results(python 3.4.2; numpy 1.9.1):
+* (0,0): 32.101826s
+* (1,0): 46.823794s
+* (1,1): 47.799499s
+
+See also [http://stackoverflow.com/questions/5956783/numpy-float-10x-slower-than-builtin-in-arithmetic-operations]()
