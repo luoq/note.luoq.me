@@ -8,6 +8,7 @@ app.config['PROFILE'] = True
 app.wsgi_app = ProfilerMiddleware(app.wsgi_app, restrictions=[30])
 app.run(debug = True)
 ```
+
 from [The Flask Mega-Tutorial, Part XVI: Debugging, Testing and Profiling](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvi-debugging-testing-and-profiling)
 
 # shutdown
