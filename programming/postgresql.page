@@ -1,0 +1,13 @@
+# psql
+## list tables
+
+```sql
+\dt
+SELECT * FROM pg_catalog.pg_tables
+```
+
+## show schema
+
+```
+\d+ table
+```
