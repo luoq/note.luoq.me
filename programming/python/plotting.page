@@ -55,3 +55,7 @@ Then clean the cache in ~/.cache/matplotlib, and reload package
 ## rotate and align date ticks so they look better
 
 matplotlib.figure.Figure.autofmt_xdate
+
+# highlight cluster in heatmap
+
+[https://github.com/mgalardini/python_plotting_snippets/blob/master/notebooks/clusters.ipynb]()
