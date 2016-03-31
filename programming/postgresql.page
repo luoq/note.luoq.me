@@ -11,3 +11,7 @@ SELECT * FROM pg_catalog.pg_tables
 ```
 \d+ table
 ```
+
+# Things to find out about when moving from MySQL to PostgreSQL
+
+[](https://wiki.postgresql.org/wiki/Things_to_find_out_about_when_moving_from_MySQL_to_PostgreSQL)
