@@ -80,3 +80,24 @@ with closing(urllib.urlopen('http://www.python.org')) as page:
 # operator
 
 * itemgetter: After f = itemgetter(2), the call f(r) returns r[2].
+
+
+# debug in exception
+
+```python
+import pdb, traceback, sys
+
+def bombs():
+    a = []
+    print a[0]
+
+if __name__ == '__main__':
+    try:
+        bombs()
+    except:
+        type, value, tb = sys.exc_info()
+        traceback.print_exc()
+        pdb.post_mortem(tb)
+```
+
+from [so](http://stackoverflow.com/questions/242485/starting-python-debugger-automatically-on-error)
