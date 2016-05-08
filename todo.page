@@ -24,32 +24,6 @@
 
 * gcc: cloog graphite
 
-# machine learning
-
-* torch7 (setup is buggy)
-* [Caffe](http://caffe.berkeleyvision.org/)
-* [deeplearning4j](http://deeplearning4j.org/)
-* [pylearn2](https://github.com/lisa-lab/pylearn2)
-* [AI on the web](http://aima.cs.berkeley.edu/ai.html)
-
-## NLP
-
-### [brat](http://brat.nlplab.org/)
-
-### uima
-
-### tools
-
-* [UIMA](http://uima.apache.org/)
-* [uimaFIT](https://uima.apache.org/uimafit.html)
-* [DKPro Core](http://code.google.com/p/dkpro-core-asl/) and [http://code.google.com/p/dkpro-core-gpl/]()
-* [cleartk](https://code.google.com/p/cleartk/)
-
-### resources
-
-* [UIMA@GSCL 2013 Tutorial (UKP)](https://code.google.com/p/dkpro-tutorials/wiki/GSCL2013)
-* [Proceedings of UIMA@GSCL 2013](http://ceur-ws.org/Vol-1038/UIMA@GSCL2013-Proceedings.pdf) pay attention to `Sentiment Analysis and Visualization using UIMA and Solr' at page 42
-
 # tools
 
 * tablesgenerator.com
